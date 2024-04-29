@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+<h3>Creating a form</h3>
+<form action="" method="">
+    <fieldset>
+        <legend>Account Credentials</legend>
+    <label for="fn">firstname</label><br>
+    <input type="text" name="lastname" placeholder="John" id="fn" name="fn"><br>
+    <label for="ln">lastname</label><br>
+    <input type="text" name="firstname" placeholder="John" id="ln" name="ln"><br>
+    <label for="email">Email</label><br>
+    <input type="email" placeholder="email@example.com" id="email" name="email"><br>
+    <label for="pwd">Password</label><br>
+    <input type="password" placeholder="••••••••" id="pwd" name="pwd" minlength="8" maxlength="10" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,10}$"><br>
+    <label for="cPwd">Confirm password</label><br>
+    <input type="password" placeholder="••••••••" id="cPwd" name="cPwd" minlength="8" maxlength="10" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,10}$"><br>
+    <label for="student-input">Student</label>
+    <input type="radio" id="student-input" value="student" checked><br>
+    <label for="teacher-input">Teacher</label>
+    <input type="radio" id="teacher-input" value="teacher"><br>
+    <label for="picture">Upload your profile picture</label><br>
+    <input type="file" id="picture" name="picture"><br>
+</fieldset>
+<fieldset>
+    <legend>User Information</legend>
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" min="18" max="50" name="age"><br>
+
+    <label for="selection">How did you hear about us</label><br>
+        <select id="selection" name="selection">
+            <option value="" disabled selected>Select your answer</option>
+            <option value="1">From a friend</option>
+            <option value="2">From social media post</option>
+            <option value="3">From a Google search</option>
+            <option value="4">From the radio</option>
+            <option value="5">Other..</option>
+        </select><br>
+        <label for="bio">Biography</label><br>
+        <textarea id="bio" rows="5" cols="50" placeholder="This is my bio..." name="bio" minlength="45" maxlength="100"></textarea><br>
+</fieldset>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
